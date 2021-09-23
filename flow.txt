@@ -1,0 +1,41 @@
+# a matrix is stored as a list of lists
+# example
+# matrix = []
+# row1 = []
+# row1.append(1, 2, 3)
+# row2 = []
+# row2.append(4, 5, 6)
+# matrix.append(row1)
+# matrix.append(row2)
+# matrix now looks like the following
+# [1  2  3]
+# [4  5  6]
+
+proposed flow for the program
+
+1) Input (GUI Opens to a basic page with a start button):
+    (press start)
+    (new GUI page pops up with 2 questions:
+        - Ask the user if their matrix is a coefficient matrix or an augmented matrix
+            - we can use this information to print the solution to the system of equations at the end
+            if it is an augmented matrix
+        - Ask the user for the dimensions of the matrix they are going to input (max 6 x 6):
+    (press continue) (gives errors if any values are non-integers, blank, or exceed the limit of)
+        - An empty matrix with n x m boxes pops up so they can enter the values of their matrix
+    (press submit) (gives errors if any of the values are not integers or if any values are blank)
+    
+    
+2) Parsing their input
+    - isAugmented will be set based on their response
+    - The dimensions that they input in the first page will determine what matrix image comes up
+    - The values they entered into their matrix will be placed in a list of lists so that each
+    member can be accessed: matrix[row][column]
+
+3) Process of row reducing begins using gaussian elimination:
+    - begin by ordering the matrix from least to most leading zeros from top to bottom
+    - 
+    
+
+    
+
+    
