@@ -125,6 +125,14 @@ class Matrix(QDialog):
             self.box42.resize(0,0)
             self.box52.resize(0,0)
             self.box62.resize(0,0) 
+
+        if row_number < 6:
+            self.box12.resize(0,0)
+            self.box22.resize(0,0)
+            self.box32.resize(0,0)
+            self.box42.resize(0,0)
+            self.box52.resize(0,0)
+            self.box62.resize(0,0) 
                
 
 # main code
