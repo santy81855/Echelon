@@ -124,6 +124,42 @@ class Matrix(QDialog):
             self.box32.resize(0,0)
             self.box42.resize(0,0)
             self.box52.resize(0,0)
+            self.box62.resize(0,0)
+        if row_number < 6:
+            self.box61.resize(0,0)
+            self.box62.resize(0,0)
+            self.box63.resize(0,0)
+            self.box64.resize(0,0)
+            self.box65.resize(0,0)
+            self.box66.resize(0,0)
+        if row_number < 5:
+            self.box51.resize(0,0)
+            self.box52.resize(0,0)
+            self.box53.resize(0,0)
+            self.box54.resize(0,0)
+            self.box55.resize(0,0)
+            self.box56.resize(0,0)
+        if row_number < 4:
+            self.box41.resize(0,0)
+            self.box42.resize(0,0)
+            self.box43.resize(0,0)
+            self.box44.resize(0,0)
+            self.box45.resize(0,0)
+            self.box46.resize(0,0)
+        if row_number < 3:
+            self.box31.resize(0,0)
+            self.box32.resize(0,0)
+            self.box33.resize(0,0)
+            self.box34.resize(0,0)
+            self.box35.resize(0,0)
+            self.box36.resize(0,0)
+        if row_number < 2:
+            self.box21.resize(0,0)
+            self.box22.resize(0,0)
+            self.box23.resize(0,0)
+            self.box24.resize(0,0)
+            self.box25.resize(0,0)
+            self.box26.resize(0,0) 
             self.box62.resize(0,0) 
 
         if row_number < 6:
@@ -133,7 +169,7 @@ class Matrix(QDialog):
             self.box42.resize(0,0)
             self.box52.resize(0,0)
             self.box62.resize(0,0) 
-               
+         
 
 # main code
 app = QApplication(sys.argv)
