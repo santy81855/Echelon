@@ -34,8 +34,7 @@ proposed flow for the program
 3) Process of row reducing begins using gaussian elimination:
     - begin by ordering the matrix from least to most leading zeros from top to bottom
     - go column by column
-        - before converting anything to 0 go down the current column and move the first row you
-        find with a leading entry of 1 to the (top + current column)
+        - before converting anything to 0 go down the current column and move the first row you find with a leading entry of 1 to the (top + current column)
         - if no 1 is found then just leave the rows as they are and divide the current row by the
         leading entry of that row
         - if the number underneath the current row leading entry is NOT 0:
@@ -48,7 +47,7 @@ proposed flow for the program
     - if coefficient: begin at n
     go backwards from column to column:
         for each row above the pivot point going upwards:
-            - multiply the current row by the negative value of current row - 1 *not correct
+            - multiply the pivot row by the negative value of the current row
     
 
     
