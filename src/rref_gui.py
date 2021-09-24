@@ -104,14 +104,14 @@ class Matrix(QDialog):
             self.box45.resize(0,0)
             self.box55.resize(0,0)
             self.box65.resize(0,0)            
-         if column_number < 4: 
+         if column_number < 4:
             self.box14.resize(0,0)
             self.box24.resize(0,0)
             self.box34.resize(0,0)
             self.box44.resize(0,0)
             self.box54.resize(0,0)
             self.box64.resize(0,0)                    
-        if column_number < 3: 
+        if column_number < 3:
             self.box13.resize(0,0)
             self.box23.resize(0,0)
             self.box33.resize(0,0)
