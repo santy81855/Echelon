@@ -104,7 +104,7 @@ class Matrix(QDialog):
             self.box45.resize(0,0)
             self.box55.resize(0,0)
             self.box65.resize(0,0)            
-         if column_number < 4:
+        if column_number < 4:
             self.box14.resize(0,0)
             self.box24.resize(0,0)
             self.box34.resize(0,0)
@@ -160,14 +160,6 @@ class Matrix(QDialog):
             self.box24.resize(0,0)
             self.box25.resize(0,0)
             self.box26.resize(0,0) 
-            self.box62.resize(0,0) 
-
-        if row_number < 6:
-            self.box12.resize(0,0)
-            self.box22.resize(0,0)
-            self.box32.resize(0,0)
-            self.box42.resize(0,0)
-            self.box52.resize(0,0)
             self.box62.resize(0,0) 
          
 
