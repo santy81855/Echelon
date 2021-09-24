@@ -28,6 +28,7 @@ input_matrix = []
 want_fractions = True
 row_number = 0
 column_number = 0
+original_matrix = []
 
 class WelcomeScreen(QDialog):
     def __init__(self):
