@@ -45,15 +45,7 @@ class Input(QDialog):
         super(Input, self).__init__()
         loadUi("input.ui", self)
         self.next_button.clicked.connect(self.get_matrix)
-        self.fractions_check.stateChanged.connect(self.check_fractions)
-        self.decimals_check.stateChanged.connect(self.check_decimals)
-    
-    def check_fractions(self):
-        global want_fractions
-        want_fractions = True
-    def check_decimals(self):
-        global want_fractions
-        want_fractions = False
+        self.fractions_check.setChecked(True)
     
     def get_matrix(self):
         # store the info they just gave
@@ -65,26 +57,75 @@ class Input(QDialog):
         errors = 0
         # start to take in the input
         # don't proceed if they leave a line blank which is optional
-        if len(self.input_row.text()) == 0 or str(self.input_row.text()) == '0':
-            self.error_1.setText("Enter a valid row number.")
+        if str(self.row_selection.currentText()) == "Select an option:":          
+            self.error_1.setText("Select a valid row number.")
             errors += 1
         else:
             self.error_1.setText('')
-            row_number = int(self.input_row.text())
+            row_number = int(self.row_selection.currentText())
 
-        if len(self.input_column.text()) == 0 or str(self.input_row.text()) == '0':
-            self.error_2.setText("Enter a valid column number.")
+        if str(self.column_selection.currentText()) == "Select an option:": 
+            self.error_2.setText("Select a valid column number.")
             errors += 1
         else:
             self.error_2.setText('')
-            column_number = int(self.input_column.text())    
+            column_number = int(self.column_selection.currentText())  
 
-        #if errors == 0:
-         #   matrix_screen = Matrix()
-          #  widget.addWidget(matrix_screen)
-           # widget.setCurrentIndex(widget.currentIndex()+1)    
+        if self.fractions_check.isChecked:
+            want_fractions == True
         
-        
+        else:
+            want_fractions == False
+
+        if errors == 0:
+            matrix_screen = Matrix()
+            widget.addWidget(matrix_screen)
+            widget.setCurrentIndex(widget.currentIndex()+1)    
+            
+
+class Matrix(QDialog):
+    def __init__(self):
+        super(Matrix, self).__init__()
+        loadUi("matrix.ui", self)
+        self.add_boxes()
+
+    def add_boxes(self):
+        if column_number < 6:
+            self.box16.resize(0,0)
+            self.box26.resize(0,0)
+            self.box36.resize(0,0)
+            self.box46.resize(0,0)
+            self.box56.resize(0,0)
+            self.box66.resize(0,0)
+        if column_number < 5:
+            self.box15.resize(0,0)
+            self.box25.resize(0,0)
+            self.box35.resize(0,0)
+            self.box45.resize(0,0)
+            self.box55.resize(0,0)
+            self.box65.resize(0,0)            
+         if column_number < 4: 
+            self.box14.resize(0,0)
+            self.box24.resize(0,0)
+            self.box34.resize(0,0)
+            self.box44.resize(0,0)
+            self.box54.resize(0,0)
+            self.box64.resize(0,0)                    
+        if column_number < 3: 
+            self.box13.resize(0,0)
+            self.box23.resize(0,0)
+            self.box33.resize(0,0)
+            self.box43.resize(0,0)
+            self.box53.resize(0,0)
+            self.box63.resize(0,0) 
+        if column_number < 2: 
+            self.box12.resize(0,0)
+            self.box22.resize(0,0)
+            self.box32.resize(0,0)
+            self.box42.resize(0,0)
+            self.box52.resize(0,0)
+            self.box62.resize(0,0) 
+               
 
 # main code
 app = QApplication(sys.argv)
