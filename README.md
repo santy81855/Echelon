@@ -4,4 +4,4 @@
 
 ## Language: Python
 
-## Link to download program: [Click Here!](https://github.com/santy81855/RREF_Project/raw/main/RowReduce_Installer.exe "download")
+## Link to download program: [Click Here!](https://github.com/santy81855/RREF_Project/raw/main/Echelon_Installer.exe "download")
