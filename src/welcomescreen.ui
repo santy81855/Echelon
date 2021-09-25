@@ -29,7 +29,7 @@ background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.3579
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>240</x>
       <y>50</y>
       <width>601</width>
       <height>121</height>
@@ -46,9 +46,9 @@ font: 75 60pt &quot;Malgun Gothic&quot;;</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>210</y>
-      <width>441</width>
+      <x>310</x>
+      <y>170</y>
+      <width>341</width>
       <height>31</height>
      </rect>
     </property>
@@ -57,7 +57,7 @@ font: 75 60pt &quot;Malgun Gothic&quot;;</string>
 color:rgb(255, 234, 167);</string>
     </property>
     <property name="text">
-     <string>Press 'Start' below to enter a matrix.</string>
+     <string>Press 'Start' to enter your matrix:</string>
     </property>
    </widget>
    <widget class="QPushButton" name="start_button">
