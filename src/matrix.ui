@@ -1613,6 +1613,9 @@ p, li { white-space: pre-wrap; }
       <pointsize>20</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(152, 152, 255);</string>
+    </property>
     <property name="textInteractionFlags">
      <set>Qt::NoTextInteraction</set>
     </property>
@@ -1637,9 +1640,9 @@ color: rgb(255, 0, 0);</string>
    <widget class="QComboBox" name="speed_selection">
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>190</y>
-      <width>281</width>
+      <x>630</x>
+      <y>150</y>
+      <width>220</width>
       <height>51</height>
      </rect>
     </property>
@@ -1647,6 +1650,12 @@ color: rgb(255, 0, 0);</string>
      <font>
       <pointsize>20</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 234, 167);
+selection-color:rgb(255, 234, 167);
+background-color: rgb(152, 152, 255);
+selection-background-color:  rgb(152, 152, 255);</string>
     </property>
     <item>
      <property name="text">
@@ -1673,7 +1682,7 @@ color: rgb(255, 0, 0);</string>
     <property name="geometry">
      <rect>
       <x>680</x>
-      <y>160</y>
+      <y>130</y>
       <width>180</width>
       <height>16</height>
      </rect>

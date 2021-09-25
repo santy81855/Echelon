@@ -144,6 +144,12 @@ color:rgb(255, 234, 167);</string>
       <pointsize>20</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 234, 167);
+selection-color:rgb(255, 234, 167);
+background-color: rgb(152, 152, 255);
+selection-background-color:  rgb(152, 152, 255);</string>
+    </property>
     <item>
      <property name="text">
       <string>Select an option:</string>
@@ -193,6 +199,12 @@ color:rgb(255, 234, 167);</string>
      <font>
       <pointsize>20</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 234, 167);
+selection-color:rgb(255, 234, 167);
+background-color: rgb(152, 152, 255);
+selection-background-color:  rgb(152, 152, 255);</string>
     </property>
     <item>
      <property name="text">
