@@ -104,12 +104,6 @@ class Matrix(QDialog):
         self.add_boxes()
         self.run_button.clicked.connect(self.start_program)
         self.exit_button.clicked.connect(self.close_program)
-        self.start_over_button.clicked.connect(self.start_over)
-
-    def start_over(self):
-        start_screen = Input()
-        widget.addWidget(start_screen)
-        widget.setCurrentIndex(widget.currentIndex()+1) 
 
     def close_program(self):
         QApplication.exit()
@@ -143,7 +137,6 @@ class Matrix(QDialog):
                     error += 1
                 else:
                     self.error_1.setText("")
-
         
         if error == 0:
             cur_row = []
@@ -158,11 +151,12 @@ class Matrix(QDialog):
             rref(input_matrix, row_number, column_number)
 
             print_matrix(matrix_steps, row_number, column_number)
-            exit[0].resize(100, 71)
-
+            exit[0].resize(220, 71)
 
     def add_boxes(self):
         self.exit_button.resize(0,0)
+        global exit
+        exit = []
         exit.append(self.exit_button)
         global empty_matrix
         global row1 
@@ -259,8 +253,7 @@ class Matrix(QDialog):
             self.box24.resize(0,0)
             self.box25.resize(0,0)
             self.box26.resize(0,0) 
-            self.box62.resize(0,0) 
-            
+            self.box62.resize(0,0)     
 
 def swap_rows(matrix, a, b, cols):
     for i in range(0, cols):

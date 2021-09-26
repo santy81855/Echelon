@@ -1695,31 +1695,12 @@ color: rgb(255, 0, 0);</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="start_over_button">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>490</y>
-      <width>100</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-radius: 20px;
-font: 75 30pt &quot;Malgun Gothic&quot;;
-color: rgb(108, 92, 231);
-background-color: rgb(255, 234, 167);</string>
-    </property>
-    <property name="text">
-     <string>Back</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="exit_button">
     <property name="geometry">
      <rect>
       <x>630</x>
       <y>490</y>
-      <width>100</width>
+      <width>220</width>
       <height>71</height>
      </rect>
     </property>
