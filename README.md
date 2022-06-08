@@ -1,4 +1,5 @@
 # Application to automate the process of row reduction to reach row reduced echelon form.
+![demo](https://github.com/santy81855/Echelon/blob/main/images/demo.png)
 
 ## Contributors: Santy Garcia & Nestor Rubio
 
